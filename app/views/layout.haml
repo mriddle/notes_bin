@@ -6,7 +6,8 @@
     %meta{:name => "viewport", :content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;"}
     %meta{'name' => 'description', 'content' => 'A place for all those things in life you should consider'}
     %meta{'name' => 'author', 'content' => 'Matthew Riddle, mriddle89@gmail.com'}
-    %link{rel: 'stylesheet', href: '/stylesheet.css', type: 'text/css'}
+    %link{rel: 'stylesheet', href: asset_path('application.css'), type: 'text/css'}
+    %script{:type => "text/javascript", :src  => asset_path('application.js')}
   %body
     #content
       = yield

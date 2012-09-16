@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), '../app/', 'notes_bin.rb')
+require File.join(File.dirname(__FILE__), '../app/', 'notes_api.rb')
 require 'rack/test'
 
 set :environment, :test
@@ -7,7 +7,7 @@ set :raise_errors, true
 set :logging, false
 
 def app
-  Sinatra::Application::NotesBin
+  Sinatra::Application::NotesAPI
 end
 
 RSpec.configure do |config|
