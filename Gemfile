@@ -6,6 +6,7 @@ gem 'sass'
 gem 'mongo'
 gem 'bson'
 gem 'bson_ext'
+gem 'coffee-script'
 
 group :test do
   gem 'rspec'
