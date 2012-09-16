@@ -1,3 +1,6 @@
+require 'sinatra'
+require 'mongo'
+
 class NotesBin < Sinatra::Base
   DB = Mongo::Connection.new.db("notes_bin", :pool_size => 5, :timeout => 5)
 
